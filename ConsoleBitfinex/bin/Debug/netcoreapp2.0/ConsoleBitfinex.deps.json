@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "12639ebd236e49010a2b9dbcdb8d8633a8b16716"
+    "signature": "0f49f8f6ed2363baa8a8743ced2163ec3679b299"
   },
   "compilationOptions": {},
   "targets": {
@@ -65,6 +65,15 @@
         },
         "runtime": {
           "lib/netstandard1.3/Newtonsoft.Json.dll": {}
+        }
+      },
+      "PusherClient/0.5.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "10.0.3",
+          "WebSocket4Net": "0.14.1"
+        },
+        "runtime": {
+          "lib/net40/PusherClient.dll": {}
         }
       },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -936,10 +945,16 @@
           "System.Xml.ReaderWriter": "4.3.0"
         }
       },
+      "WebSocket4Net/0.14.1": {
+        "runtime": {
+          "lib/net45/WebSocket4Net.dll": {}
+        }
+      },
       "ExternalServices/1.0.0": {
         "dependencies": {
           "BitstampApi.Net": "1.0.0",
           "Newtonsoft.Json": "10.0.3",
+          "PusherClient": "0.5.0",
           "System.Net.WebSockets.Client": "4.3.1"
         },
         "runtime": {
@@ -995,6 +1010,13 @@
       "sha512": "sha512-wBM7i7i3U2WX0ecor4zdVGvgrwFUjuigBoHKiL+nH39fCOpCPjBY3RDqJM32edvdyTAVdjzlccHsg41+/+zpSA==",
       "path": "newtonsoft.json/10.0.3",
       "hashPath": "newtonsoft.json.10.0.3.nupkg.sha512"
+    },
+    "PusherClient/0.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-znGIJUkqOT1Both2m3ERnepxJTRHUBJdJpAiiwrhwwfa8nAVMHs6ui3hR/ijKCoD1xkVZ2T5T5XfssGR1pnuDg==",
+      "path": "pusherclient/0.5.0",
+      "hashPath": "pusherclient.0.5.0.nupkg.sha512"
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
       "type": "package",
@@ -1534,6 +1556,13 @@
       "sha512": "sha512-lJ8AxvkX7GQxpC6GFCeBj8ThYVyQczx2+f/cWHJU8tjS7YfI6Cv6bon70jVEgs2CiFbmmM8b9j1oZVx0dSI2Ww==",
       "path": "system.xml.xmldocument/4.3.0",
       "hashPath": "system.xml.xmldocument.4.3.0.nupkg.sha512"
+    },
+    "WebSocket4Net/0.14.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TNBXbI9mUkgwoSyNKIftqC91FAOZ7IKB+hTJ14BtVJGwO3+WxkL63FlbFwN5YmvYxL9M31NRQE4Ci3rpcg09Ug==",
+      "path": "websocket4net/0.14.1",
+      "hashPath": "websocket4net.0.14.1.nupkg.sha512"
     },
     "ExternalServices/1.0.0": {
       "type": "project",

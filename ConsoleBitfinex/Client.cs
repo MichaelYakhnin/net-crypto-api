@@ -22,13 +22,13 @@ namespace ConsoleBitfinex
             //BlockchainInfo.Connect("wss://ws.blockchain.info/inv").Wait();
             //BitfinexTicker bf = new BitfinexTicker(new Asset("subscribe", "ticker", "BTCUSD"));
             // BitfinexOrderBooks bo = new BitfinexOrderBooks(new OrderBooks("subscribe", "book", "BTCUSD", "P0", "F0","25"));
-         //   BitfinexPublicApi bit = new BitfinexPublicApi();
-         ////   Console.Write(bit.GetTicker("BTCUSD"));
-         //   JObject parsed = bit.GetOrderBook("BTCUSD");
-         //   foreach (var pair in parsed)
-         //   {
-         //       Console.WriteLine("{0}: {1}", pair.Key, pair.Value);
-         //   }
+            BitfinexPublicApi bit = new BitfinexPublicApi();
+            Console.Write(bit.GetTicker("BTCUSD"));
+            //   JObject parsed = bit.GetOrderBook("BTCUSD");
+            //   foreach (var pair in parsed)
+            //   {
+            //       Console.WriteLine("{0}: {1}", pair.Key, pair.Value);
+            //   }
             Program p = new Program();
             p.MainWindow();
 
