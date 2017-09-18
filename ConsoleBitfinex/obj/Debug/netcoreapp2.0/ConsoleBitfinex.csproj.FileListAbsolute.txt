@@ -1,0 +1,13 @@
+D:\branches\Bitfinex\ConsoleBitfinex\bin\Debug\netcoreapp2.0\ConsoleBitfinex.deps.json
+D:\branches\Bitfinex\ConsoleBitfinex\bin\Debug\netcoreapp2.0\ConsoleBitfinex.runtimeconfig.json
+D:\branches\Bitfinex\ConsoleBitfinex\bin\Debug\netcoreapp2.0\ConsoleBitfinex.runtimeconfig.dev.json
+D:\branches\Bitfinex\ConsoleBitfinex\bin\Debug\netcoreapp2.0\ConsoleBitfinex.dll
+D:\branches\Bitfinex\ConsoleBitfinex\bin\Debug\netcoreapp2.0\ConsoleBitfinex.pdb
+D:\branches\Bitfinex\ConsoleBitfinex\obj\Debug\netcoreapp2.0\ConsoleBitfinex.csprojResolveAssemblyReference.cache
+D:\branches\Bitfinex\ConsoleBitfinex\obj\Debug\netcoreapp2.0\ConsoleBitfinex.csproj.CoreCompileInputs.cache
+D:\branches\Bitfinex\ConsoleBitfinex\obj\Debug\netcoreapp2.0\ConsoleBitfinex.AssemblyInfoInputs.cache
+D:\branches\Bitfinex\ConsoleBitfinex\obj\Debug\netcoreapp2.0\ConsoleBitfinex.AssemblyInfo.cs
+D:\branches\Bitfinex\ConsoleBitfinex\obj\Debug\netcoreapp2.0\ConsoleBitfinex.dll
+D:\branches\Bitfinex\ConsoleBitfinex\obj\Debug\netcoreapp2.0\ConsoleBitfinex.pdb
+D:\branches\Bitfinex\ConsoleBitfinex\bin\Debug\netcoreapp2.0\ExternalServices.dll
+D:\branches\Bitfinex\ConsoleBitfinex\bin\Debug\netcoreapp2.0\ExternalServices.pdb
