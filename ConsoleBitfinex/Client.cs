@@ -31,6 +31,9 @@ namespace ConsoleBitfinex
 
             lastDataOrderBook = bitstampPublicApi.Get25dataFromOrderBook();
             Console.WriteLine(lastDataOrderBook.AssetName + " Bid:" + lastDataOrderBook.bids.price + " Amount:" + lastDataOrderBook.bids.amount);
+            //
+            OrdersService ordersService = new OrdersService();
+
 
             //websocket bitfinex
             BitstampOrderSend bitstampOrderSend = new BitstampOrderSend();
@@ -39,7 +42,7 @@ namespace ConsoleBitfinex
             bitstampOrderSend.Pair = "BTCUSD";
             bitstampOrderSend.Prec = "P0";
             bitstampOrderSend.Freq = "F0";
-            BitfinexOrdersrWS bitfinexOrdersrWS = new BitfinexOrdersrWS(bitstampOrderSend);
+           // BitfinexOrdersrWS bitfinexOrdersrWS = new BitfinexOrdersrWS(bitstampOrderSend);
 
             //Program p = new Program();
             //p.MainWindow();
