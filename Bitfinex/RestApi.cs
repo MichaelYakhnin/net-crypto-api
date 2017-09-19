@@ -8,13 +8,23 @@ namespace ExternalServices
 {
     public class RestApi
     {
-        public JObject Send(string path)
+        private string data;
+
+        public string Send(string path)
         {
             using (WebClient wc = new WebClient())
             {
-                string ticker = wc.DownloadString(path);
-                JObject jo = JObject.Parse(ticker);
-                return jo;
+               
+                try
+                {
+                    data = wc.DownloadString(path);
+                }
+                catch (WebException e)
+                {
+                    
+                   Console.Write( e);
+                }
+                return data;
             }
         }
        
