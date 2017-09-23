@@ -7,3 +7,12 @@ D:\branches\Bitfinex\Bitfinex\obj\Debug\netcoreapp2.0\ExternalServices.AssemblyI
 D:\branches\Bitfinex\Bitfinex\obj\Debug\netcoreapp2.0\ExternalServices.dll
 D:\branches\Bitfinex\Bitfinex\obj\Debug\netcoreapp2.0\ExternalServices.pdb
 D:\branches\Bitfinex\Bitfinex\obj\Debug\netcoreapp2.0\ExternalServices.csprojResolveAssemblyReference.cache
+E:\Projects\Bitfinex\Bitfinex\bin\Debug\netcoreapp2.0\ExternalServices.deps.json
+E:\Projects\Bitfinex\Bitfinex\bin\Debug\netcoreapp2.0\ExternalServices.dll
+E:\Projects\Bitfinex\Bitfinex\bin\Debug\netcoreapp2.0\ExternalServices.pdb
+E:\Projects\Bitfinex\Bitfinex\obj\Debug\netcoreapp2.0\ExternalServices.csprojResolveAssemblyReference.cache
+E:\Projects\Bitfinex\Bitfinex\obj\Debug\netcoreapp2.0\ExternalServices.csproj.CoreCompileInputs.cache
+E:\Projects\Bitfinex\Bitfinex\obj\Debug\netcoreapp2.0\ExternalServices.AssemblyInfoInputs.cache
+E:\Projects\Bitfinex\Bitfinex\obj\Debug\netcoreapp2.0\ExternalServices.AssemblyInfo.cs
+E:\Projects\Bitfinex\Bitfinex\obj\Debug\netcoreapp2.0\ExternalServices.dll
+E:\Projects\Bitfinex\Bitfinex\obj\Debug\netcoreapp2.0\ExternalServices.pdb

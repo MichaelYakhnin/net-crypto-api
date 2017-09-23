@@ -8,7 +8,9 @@
     <PackageReference Include="BitstampApi.Net" Version="1.0.0" />
     <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
     <PackageReference Include="PusherClient" Version="0.5.0" />
+    <PackageReference Include="Quartz" Version="3.0.0-alpha3" />
     <PackageReference Include="System.Net.WebSockets.Client" Version="4.3.1" />
+    <PackageReference Include="System.Security.Permissions" Version="4.4.0" />
   </ItemGroup>
 
   <ItemGroup>
