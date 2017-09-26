@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Bitfinex\ExternalServices.csproj" />
+    <ProjectReference Include="..\PublicServices\TickerMonitor.csproj" />
   </ItemGroup>
 
 </Project>

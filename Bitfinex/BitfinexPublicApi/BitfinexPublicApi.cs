@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ExternalServices
 {
-    public class BitfinexPublicApi : RestApi
+    public class BitfinexPublicApi : RestApi, IPublicApi
     {
         private const string TICKER = "https://api.bitfinex.com/v1/pubticker/";
         private const string ORDER_BOOK = "https://api.bitfinex.com/v1/book/";

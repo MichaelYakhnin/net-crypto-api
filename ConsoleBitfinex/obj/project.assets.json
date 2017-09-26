@@ -2,28 +2,6 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.0": {
-      "BitstampApi.Net/1.0.0": {
-        "type": "package",
-        "dependencies": {
-          "JackLeitch.RateGate": "(, )",
-          "Newtonsoft.Json": "(, )"
-        },
-        "compile": {
-          "lib/net45/BitstampApi.Net.dll": {}
-        },
-        "runtime": {
-          "lib/net45/BitstampApi.Net.dll": {}
-        }
-      },
-      "JackLeitch.RateGate/1.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/net40/RateGate.dll": {}
-        },
-        "runtime": {
-          "lib/net40/RateGate.dll": {}
-        }
-      },
       "Microsoft.CSharp/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -307,19 +285,6 @@
         },
         "runtime": {
           "lib/netstandard1.3/Newtonsoft.Json.dll": {}
-        }
-      },
-      "PusherClient/0.5.0": {
-        "type": "package",
-        "dependencies": {
-          "Newtonsoft.Json": "9.0.1",
-          "WebSocket4Net": "0.14.1"
-        },
-        "compile": {
-          "lib/net40/PusherClient.dll": {}
-        },
-        "runtime": {
-          "lib/net40/PusherClient.dll": {}
         }
       },
       "Quartz/3.0.0-alpha3": {
@@ -1248,65 +1213,6 @@
           "lib/netstandard1.3/System.Net.WebHeaderCollection.dll": {}
         }
       },
-      "System.Net.WebSockets/4.3.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Win32.Primitives": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Threading.Tasks": "4.3.0"
-        },
-        "compile": {
-          "ref/netstandard1.3/System.Net.WebSockets.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.3/System.Net.WebSockets.dll": {}
-        }
-      },
-      "System.Net.WebSockets.Client/4.3.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.0",
-          "Microsoft.Win32.Primitives": "4.3.0",
-          "System.Collections": "4.3.0",
-          "System.Diagnostics.Debug": "4.3.0",
-          "System.Diagnostics.Tracing": "4.3.0",
-          "System.Globalization": "4.3.0",
-          "System.IO": "4.3.0",
-          "System.Net.NameResolution": "4.3.0",
-          "System.Net.Primitives": "4.3.0",
-          "System.Net.Security": "4.3.0",
-          "System.Net.Sockets": "4.3.0",
-          "System.Net.WebHeaderCollection": "4.3.0",
-          "System.Net.WebSockets": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0",
-          "System.Runtime.Handles": "4.3.0",
-          "System.Runtime.InteropServices": "4.3.0",
-          "System.Security.Cryptography.Algorithms": "4.3.0",
-          "System.Security.Cryptography.Primitives": "4.3.0",
-          "System.Security.Cryptography.X509Certificates": "4.3.0",
-          "System.Text.Encoding": "4.3.0",
-          "System.Text.Encoding.Extensions": "4.3.0",
-          "System.Threading": "4.3.0",
-          "System.Threading.Tasks": "4.3.0",
-          "System.Threading.Timer": "4.3.0"
-        },
-        "compile": {
-          "ref/netstandard1.3/System.Net.WebSockets.Client.dll": {}
-        },
-        "runtimeTargets": {
-          "runtimes/unix/lib/netstandard1.3/System.Net.WebSockets.Client.dll": {
-            "assetType": "runtime",
-            "rid": "unix"
-          },
-          "runtimes/win/lib/netstandard1.3/System.Net.WebSockets.Client.dll": {
-            "assetType": "runtime",
-            "rid": "win"
-          }
-        }
-      },
       "System.ObjectModel/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -1661,7 +1567,7 @@
           "runtime.native.System.Security.Cryptography.OpenSsl": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.6/System.Security.Cryptography.Algorithms.dll": {}
+          "ref/netstandard1.6/_._": {}
         },
         "runtimeTargets": {
           "runtimes/osx/lib/netstandard1.6/System.Security.Cryptography.Algorithms.dll": {
@@ -1755,7 +1661,7 @@
           "runtime.native.System.Security.Cryptography.OpenSsl": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.3/System.Security.Cryptography.Encoding.dll": {}
+          "ref/netstandard1.3/_._": {}
         },
         "runtimeTargets": {
           "runtimes/unix/lib/netstandard1.3/System.Security.Cryptography.Encoding.dll": {
@@ -1810,7 +1716,7 @@
           "System.Threading.Tasks": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.3/System.Security.Cryptography.Primitives.dll": {}
+          "ref/netstandard1.3/_._": {}
         },
         "runtime": {
           "lib/netstandard1.3/System.Security.Cryptography.Primitives.dll": {}
@@ -1861,7 +1767,7 @@
           "runtime.native.System.Security.Cryptography.OpenSsl": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.4/System.Security.Cryptography.X509Certificates.dll": {}
+          "ref/netstandard1.4/_._": {}
         },
         "runtimeTargets": {
           "runtimes/unix/lib/netstandard1.6/System.Security.Cryptography.X509Certificates.dll": {
@@ -2198,58 +2104,23 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "WebSocket4Net/0.14.1": {
-        "type": "package",
-        "compile": {
-          "lib/net45/WebSocket4Net.dll": {}
-        },
-        "runtime": {
-          "lib/net45/WebSocket4Net.dll": {}
-        }
-      },
-      "ExternalServices/1.0.0": {
+      "TickerMonitor/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
-          "BitstampApi.Net": "1.0.0",
           "Newtonsoft.Json": "10.0.3",
-          "PusherClient": "0.5.0",
-          "Quartz": "3.0.0-alpha3",
-          "System.Net.WebSockets.Client": "4.3.1",
-          "System.Security.Permissions": "4.4.0"
+          "Quartz": "3.0.0-alpha3"
         },
         "compile": {
-          "bin/placeholder/ExternalServices.dll": {}
+          "bin/placeholder/TickerMonitor.dll": {}
         },
         "runtime": {
-          "bin/placeholder/ExternalServices.dll": {}
+          "bin/placeholder/TickerMonitor.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "BitstampApi.Net/1.0.0": {
-      "sha512": "olEPHhwveTsxObf9tqTpUji8y02jMUq0V47HXPP2On2yeaxKWYZ/AThl1qMMOJggpiQ4sEK4SlOfWawielXqHw==",
-      "type": "package",
-      "path": "bitstampapi.net/1.0.0",
-      "files": [
-        "bitstampapi.net.1.0.0.nupkg.sha512",
-        "bitstampapi.net.nuspec",
-        "lib/net45/BitstampApi.Net.dll",
-        "lib/net45/BitstampApi.Net.xml"
-      ]
-    },
-    "JackLeitch.RateGate/1.0.0": {
-      "sha512": "Mm/bqONHF0SEeNq4gPq1JIiHzWsnddziAlgVho/CIf26KXJQ/E0gBDcvh3jNtGAkNbUwEs9z4CDDB5tNX5CiJA==",
-      "type": "package",
-      "path": "jackleitch.rategate/1.0.0",
-      "files": [
-        "jackleitch.rategate.1.0.0.nupkg.sha512",
-        "jackleitch.rategate.nuspec",
-        "lib/net40/RateGate.XML",
-        "lib/net40/RateGate.dll"
-      ]
-    },
     "Microsoft.CSharp/4.3.0": {
       "sha512": "P+MBhIM0YX+JqROuf7i306ZLJEjQYA9uUyRDE+OqwUI5sh41e2ZbPQV3LfAPh+29cmceE1pUffXsGfR4eMY3KA==",
       "type": "package",
@@ -2866,17 +2737,6 @@
         "newtonsoft.json.10.0.3.nupkg.sha512",
         "newtonsoft.json.nuspec",
         "tools/install.ps1"
-      ]
-    },
-    "PusherClient/0.5.0": {
-      "sha512": "znGIJUkqOT1Both2m3ERnepxJTRHUBJdJpAiiwrhwwfa8nAVMHs6ui3hR/ijKCoD1xkVZ2T5T5XfssGR1pnuDg==",
-      "type": "package",
-      "path": "pusherclient/0.5.0",
-      "files": [
-        "lib/net40/PusherClient.XML",
-        "lib/net40/PusherClient.dll",
-        "pusherclient.0.5.0.nupkg.sha512",
-        "pusherclient.nuspec"
       ]
     },
     "Quartz/3.0.0-alpha3": {
@@ -4820,83 +4680,6 @@
         "ref/xamarinwatchos10/_._",
         "system.net.webheadercollection.4.3.0.nupkg.sha512",
         "system.net.webheadercollection.nuspec"
-      ]
-    },
-    "System.Net.WebSockets/4.3.0": {
-      "sha512": "u6fFNY5q4T8KerUAVbya7bR6b7muBuSTAersyrihkcmE5QhEOiH3t5rh4il15SexbVlpXFHGuMwr/m8fDrnkQg==",
-      "type": "package",
-      "path": "system.net.websockets/4.3.0",
-      "files": [
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net46/System.Net.WebSockets.dll",
-        "lib/netstandard1.3/System.Net.WebSockets.dll",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net46/System.Net.WebSockets.dll",
-        "ref/netstandard1.3/System.Net.WebSockets.dll",
-        "ref/netstandard1.3/System.Net.WebSockets.xml",
-        "ref/netstandard1.3/de/System.Net.WebSockets.xml",
-        "ref/netstandard1.3/es/System.Net.WebSockets.xml",
-        "ref/netstandard1.3/fr/System.Net.WebSockets.xml",
-        "ref/netstandard1.3/it/System.Net.WebSockets.xml",
-        "ref/netstandard1.3/ja/System.Net.WebSockets.xml",
-        "ref/netstandard1.3/ko/System.Net.WebSockets.xml",
-        "ref/netstandard1.3/ru/System.Net.WebSockets.xml",
-        "ref/netstandard1.3/zh-hans/System.Net.WebSockets.xml",
-        "ref/netstandard1.3/zh-hant/System.Net.WebSockets.xml",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.net.websockets.4.3.0.nupkg.sha512",
-        "system.net.websockets.nuspec"
-      ]
-    },
-    "System.Net.WebSockets.Client/4.3.1": {
-      "sha512": "uQ2JCw7PuWx/TsGc5uyMibp2X1Rui3iUpS3AHnWT7k/8A7ORTNIRktxgmrCDrgBFm771+JS+FGQPANRuWOBMTQ==",
-      "type": "package",
-      "path": "system.net.websockets.client/4.3.1",
-      "files": [
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net46/System.Net.WebSockets.Client.dll",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net46/System.Net.WebSockets.Client.dll",
-        "ref/netstandard1.3/System.Net.WebSockets.Client.dll",
-        "ref/netstandard1.3/System.Net.WebSockets.Client.xml",
-        "ref/netstandard1.3/de/System.Net.WebSockets.Client.xml",
-        "ref/netstandard1.3/es/System.Net.WebSockets.Client.xml",
-        "ref/netstandard1.3/fr/System.Net.WebSockets.Client.xml",
-        "ref/netstandard1.3/it/System.Net.WebSockets.Client.xml",
-        "ref/netstandard1.3/ja/System.Net.WebSockets.Client.xml",
-        "ref/netstandard1.3/ko/System.Net.WebSockets.Client.xml",
-        "ref/netstandard1.3/ru/System.Net.WebSockets.Client.xml",
-        "ref/netstandard1.3/zh-hans/System.Net.WebSockets.Client.xml",
-        "ref/netstandard1.3/zh-hant/System.Net.WebSockets.Client.xml",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "runtimes/unix/lib/netstandard1.3/System.Net.WebSockets.Client.dll",
-        "runtimes/win/lib/net46/System.Net.WebSockets.Client.dll",
-        "runtimes/win/lib/netcore50/System.Net.WebSockets.Client.dll",
-        "runtimes/win/lib/netstandard1.3/System.Net.WebSockets.Client.dll",
-        "system.net.websockets.client.4.3.1.nupkg.sha512",
-        "system.net.websockets.client.nuspec"
       ]
     },
     "System.ObjectModel/4.3.0": {
@@ -7260,41 +7043,22 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
-    "WebSocket4Net/0.14.1": {
-      "sha512": "TNBXbI9mUkgwoSyNKIftqC91FAOZ7IKB+hTJ14BtVJGwO3+WxkL63FlbFwN5YmvYxL9M31NRQE4Ci3rpcg09Ug==",
-      "type": "package",
-      "path": "websocket4net/0.14.1",
-      "files": [
-        "lib/Xamarin.iOS10/WebSocket4Net.dll",
-        "lib/monoandroid23/WebSocket4Net.dll",
-        "lib/monotouch10/WebSocket4Net.dll",
-        "lib/net20/WebSocket4Net.dll",
-        "lib/net35/WebSocket4Net.dll",
-        "lib/net40/WebSocket4Net.dll",
-        "lib/net45/WebSocket4Net.dll",
-        "lib/sl40/WebSocket4Net.dll",
-        "lib/sl50-wp/WebSocket4Net.dll",
-        "lib/sl50/WebSocket4Net.dll",
-        "websocket4net.0.14.1.nupkg.sha512",
-        "websocket4net.nuspec"
-      ]
-    },
-    "ExternalServices/1.0.0": {
+    "TickerMonitor/1.0.0": {
       "type": "project",
-      "path": "../Bitfinex/ExternalServices.csproj",
-      "msbuildProject": "../Bitfinex/ExternalServices.csproj"
+      "path": "../PublicServices/TickerMonitor.csproj",
+      "msbuildProject": "../PublicServices/TickerMonitor.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
-      "ExternalServices >= 1.0.0",
       "Microsoft.NETCore.App >= 2.0.0",
       "Quartz >= 3.0.0-alpha3",
-      "System.Security.Permissions >= 4.4.0"
+      "System.Security.Permissions >= 4.4.0",
+      "TickerMonitor >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mikel\\.nuget\\packages\\": {},
+    "C:\\Users\\micha\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -7303,17 +7067,17 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "E:\\Projects\\Bitfinex\\ConsoleBitfinex\\ConsoleBitfinex.csproj",
+      "projectUniqueName": "D:\\branches\\Bitfinex\\ConsoleBitfinex\\ConsoleBitfinex.csproj",
       "projectName": "ConsoleBitfinex",
-      "projectPath": "E:\\Projects\\Bitfinex\\ConsoleBitfinex\\ConsoleBitfinex.csproj",
-      "packagesPath": "C:\\Users\\mikel\\.nuget\\packages\\",
-      "outputPath": "E:\\Projects\\Bitfinex\\ConsoleBitfinex\\obj\\",
+      "projectPath": "D:\\branches\\Bitfinex\\ConsoleBitfinex\\ConsoleBitfinex.csproj",
+      "packagesPath": "C:\\Users\\micha\\.nuget\\packages\\",
+      "outputPath": "D:\\branches\\Bitfinex\\ConsoleBitfinex\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\mikel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\micha\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7326,8 +7090,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "E:\\Projects\\Bitfinex\\Bitfinex\\ExternalServices.csproj": {
-              "projectPath": "E:\\Projects\\Bitfinex\\Bitfinex\\ExternalServices.csproj"
+            "D:\\branches\\Bitfinex\\PublicServices\\TickerMonitor.csproj": {
+              "projectPath": "D:\\branches\\Bitfinex\\PublicServices\\TickerMonitor.csproj"
             }
           }
         }
@@ -7362,57 +7126,5 @@
         "warn": true
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1602",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "BitstampApi.Net 1.0.0 does not provide an inclusive lower bound for dependency JackLeitch.RateGate. An approximate best match of JackLeitch.RateGate 1.0.0 was resolved.",
-      "libraryId": "JackLeitch.RateGate",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v2.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'BitstampApi.Net 1.0.0' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
-      "libraryId": "BitstampApi.Net",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v2.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'JackLeitch.RateGate 1.0.0' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
-      "libraryId": "JackLeitch.RateGate",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v2.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'PusherClient 0.5.0' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
-      "libraryId": "PusherClient",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v2.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'WebSocket4Net 0.14.1' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
-      "libraryId": "WebSocket4Net",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v2.0"
-      ]
-    }
-  ]
+  }
 }

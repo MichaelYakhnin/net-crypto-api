@@ -9,13 +9,13 @@ namespace ExternalServices
 {
     public class OrdersService : IJob
     {
-        BitfinexPublicApi bit;
+        BitfinexPublicApi bitfinexPublicApi;
         BitstampPublicApi bitstampPublicApi;
         LastDataOrderBook lastDataOrderBook;
 
         public OrdersService()
         {
-            bit = new BitfinexPublicApi();
+            bitfinexPublicApi = new BitfinexPublicApi();
             bitstampPublicApi = new BitstampPublicApi();
             lastDataOrderBook = new LastDataOrderBook();
             //Console.Write(bit.GetTicker("BTCUSD"));
@@ -23,15 +23,20 @@ namespace ExternalServices
         }
         public async Task Execute(IJobExecutionContext context)
         {
-            bit.GetOrderBook("BTCUSD");
-            bitstampPublicApi.GetOrderBook("btcusd");
-
-            lastDataOrderBook = bit.Get25dataFromOrderBook();
-            Console.WriteLine("Provider:"+ lastDataOrderBook.Provider + " "+ lastDataOrderBook.AssetName + " Bid:" + lastDataOrderBook.bids.price + " Amount:" + lastDataOrderBook.bids.amount);
-            
-            lastDataOrderBook = bitstampPublicApi.Get25dataFromOrderBook();
-            Console.WriteLine("Provider:" + lastDataOrderBook.Provider + " " + lastDataOrderBook.AssetName + " Bid:" + lastDataOrderBook.bids.price + " Amount:" + lastDataOrderBook.bids.amount);
+            GetOrderBookByTicker(bitfinexPublicApi, "BTCUSD");
+            GetOrderBookByTicker(bitstampPublicApi, "btcusd");
+            GetOrderBookByTicker(bitfinexPublicApi, "ETHUSD");
+            GetOrderBookByTicker(bitstampPublicApi, "ethusd");
+            GetOrderBookByTicker(bitfinexPublicApi, "LTCUSD");
+            GetOrderBookByTicker(bitstampPublicApi, "ltcusd");
             await Console.Out.WriteLineAsync("Last orders!");
+        }
+        private void GetOrderBookByTicker(IPublicApi publicApi, string ticker)
+        {
+            publicApi.GetOrderBook(ticker);
+            lastDataOrderBook = publicApi.Get25dataFromOrderBook();
+            Console.WriteLine("Provider:" + lastDataOrderBook.Provider + " " + lastDataOrderBook.AssetName + " Bid:" + lastDataOrderBook.bids.price + " Amount:" + lastDataOrderBook.bids.amount + " Timestamp:" + Utils.UnixTimeStampToDateTime(double.Parse(lastDataOrderBook.bids.timestamp)));
+            Console.WriteLine("Provider:" + lastDataOrderBook.Provider + " " + lastDataOrderBook.AssetName + " Ask:" + lastDataOrderBook.asks.price + " Amount:" + lastDataOrderBook.asks.amount + " Timestamp:" + Utils.UnixTimeStampToDateTime(double.Parse(lastDataOrderBook.bids.timestamp)));
         }
 
     }

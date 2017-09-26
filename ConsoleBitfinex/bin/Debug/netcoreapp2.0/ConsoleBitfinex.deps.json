@@ -1,33 +1,19 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "5650af75176dfe05edf03cb0e2ef59a9c2199086"
+    "signature": "cfd2c819dce94ab3307a4bf7bce07f1a0369cffc"
   },
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.0": {
       "ConsoleBitfinex/1.0.0": {
         "dependencies": {
-          "ExternalServices": "1.0.0",
           "Quartz": "3.0.0-alpha3",
-          "System.Security.Permissions": "4.4.0"
+          "System.Security.Permissions": "4.4.0",
+          "TickerMonitor": "1.0.0"
         },
         "runtime": {
           "ConsoleBitfinex.dll": {}
-        }
-      },
-      "BitstampApi.Net/1.0.0": {
-        "dependencies": {
-          "JackLeitch.RateGate": "1.0.0",
-          "Newtonsoft.Json": "10.0.3"
-        },
-        "runtime": {
-          "lib/net45/BitstampApi.Net.dll": {}
-        }
-      },
-      "JackLeitch.RateGate/1.0.0": {
-        "runtime": {
-          "lib/net40/RateGate.dll": {}
         }
       },
       "Microsoft.CSharp/4.3.0": {
@@ -88,15 +74,6 @@
         },
         "runtime": {
           "lib/netstandard1.3/Newtonsoft.Json.dll": {}
-        }
-      },
-      "PusherClient/0.5.0": {
-        "dependencies": {
-          "Newtonsoft.Json": "10.0.3",
-          "WebSocket4Net": "0.14.1"
-        },
-        "runtime": {
-          "lib/net40/PusherClient.dll": {}
         }
       },
       "Quartz/3.0.0-alpha3": {
@@ -777,53 +754,6 @@
           "System.Runtime.Extensions": "4.3.0"
         }
       },
-      "System.Net.WebSockets/4.3.0": {
-        "dependencies": {
-          "Microsoft.Win32.Primitives": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Threading.Tasks": "4.3.0"
-        }
-      },
-      "System.Net.WebSockets.Client/4.3.1": {
-        "dependencies": {
-          "Microsoft.Win32.Primitives": "4.3.0",
-          "System.Collections": "4.3.0",
-          "System.Diagnostics.Debug": "4.3.0",
-          "System.Diagnostics.Tracing": "4.3.0",
-          "System.Globalization": "4.3.0",
-          "System.IO": "4.3.0",
-          "System.Net.NameResolution": "4.3.0",
-          "System.Net.Primitives": "4.3.0",
-          "System.Net.Security": "4.3.0",
-          "System.Net.Sockets": "4.3.0",
-          "System.Net.WebHeaderCollection": "4.3.0",
-          "System.Net.WebSockets": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0",
-          "System.Runtime.Handles": "4.3.0",
-          "System.Runtime.InteropServices": "4.3.0",
-          "System.Security.Cryptography.Algorithms": "4.3.0",
-          "System.Security.Cryptography.Primitives": "4.3.0",
-          "System.Security.Cryptography.X509Certificates": "4.3.0",
-          "System.Text.Encoding": "4.3.0",
-          "System.Text.Encoding.Extensions": "4.3.0",
-          "System.Threading": "4.3.0",
-          "System.Threading.Tasks": "4.3.0",
-          "System.Threading.Timer": "4.3.0"
-        },
-        "runtimeTargets": {
-          "runtime/unix/lib/_._": {
-            "rid": "unix",
-            "assetType": "runtime"
-          },
-          "runtime/win/lib/_._": {
-            "rid": "win",
-            "assetType": "runtime"
-          }
-        }
-      },
       "System.ObjectModel/4.3.0": {
         "dependencies": {
           "System.Collections": "4.3.0",
@@ -1419,22 +1349,13 @@
           "System.Xml.XmlDocument": "4.3.0"
         }
       },
-      "WebSocket4Net/0.14.1": {
-        "runtime": {
-          "lib/net45/WebSocket4Net.dll": {}
-        }
-      },
-      "ExternalServices/1.0.0": {
+      "TickerMonitor/1.0.0": {
         "dependencies": {
-          "BitstampApi.Net": "1.0.0",
           "Newtonsoft.Json": "10.0.3",
-          "PusherClient": "0.5.0",
-          "Quartz": "3.0.0-alpha3",
-          "System.Net.WebSockets.Client": "4.3.1",
-          "System.Security.Permissions": "4.4.0"
+          "Quartz": "3.0.0-alpha3"
         },
         "runtime": {
-          "ExternalServices.dll": {}
+          "TickerMonitor.dll": {}
         }
       }
     }
@@ -1444,20 +1365,6 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
-    },
-    "BitstampApi.Net/1.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-olEPHhwveTsxObf9tqTpUji8y02jMUq0V47HXPP2On2yeaxKWYZ/AThl1qMMOJggpiQ4sEK4SlOfWawielXqHw==",
-      "path": "bitstampapi.net/1.0.0",
-      "hashPath": "bitstampapi.net.1.0.0.nupkg.sha512"
-    },
-    "JackLeitch.RateGate/1.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-Mm/bqONHF0SEeNq4gPq1JIiHzWsnddziAlgVho/CIf26KXJQ/E0gBDcvh3jNtGAkNbUwEs9z4CDDB5tNX5CiJA==",
-      "path": "jackleitch.rategate/1.0.0",
-      "hashPath": "jackleitch.rategate.1.0.0.nupkg.sha512"
     },
     "Microsoft.CSharp/4.3.0": {
       "type": "package",
@@ -1493,13 +1400,6 @@
       "sha512": "sha512-wBM7i7i3U2WX0ecor4zdVGvgrwFUjuigBoHKiL+nH39fCOpCPjBY3RDqJM32edvdyTAVdjzlccHsg41+/+zpSA==",
       "path": "newtonsoft.json/10.0.3",
       "hashPath": "newtonsoft.json.10.0.3.nupkg.sha512"
-    },
-    "PusherClient/0.5.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-znGIJUkqOT1Both2m3ERnepxJTRHUBJdJpAiiwrhwwfa8nAVMHs6ui3hR/ijKCoD1xkVZ2T5T5XfssGR1pnuDg==",
-      "path": "pusherclient/0.5.0",
-      "hashPath": "pusherclient.0.5.0.nupkg.sha512"
     },
     "Quartz/3.0.0-alpha3": {
       "type": "package",
@@ -1872,20 +1772,6 @@
       "path": "system.net.webheadercollection/4.3.0",
       "hashPath": "system.net.webheadercollection.4.3.0.nupkg.sha512"
     },
-    "System.Net.WebSockets/4.3.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-u6fFNY5q4T8KerUAVbya7bR6b7muBuSTAersyrihkcmE5QhEOiH3t5rh4il15SexbVlpXFHGuMwr/m8fDrnkQg==",
-      "path": "system.net.websockets/4.3.0",
-      "hashPath": "system.net.websockets.4.3.0.nupkg.sha512"
-    },
-    "System.Net.WebSockets.Client/4.3.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-uQ2JCw7PuWx/TsGc5uyMibp2X1Rui3iUpS3AHnWT7k/8A7ORTNIRktxgmrCDrgBFm771+JS+FGQPANRuWOBMTQ==",
-      "path": "system.net.websockets.client/4.3.1",
-      "hashPath": "system.net.websockets.client.4.3.1.nupkg.sha512"
-    },
     "System.ObjectModel/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -2222,14 +2108,7 @@
       "path": "system.xml.xmlserializer/4.3.0",
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
     },
-    "WebSocket4Net/0.14.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-TNBXbI9mUkgwoSyNKIftqC91FAOZ7IKB+hTJ14BtVJGwO3+WxkL63FlbFwN5YmvYxL9M31NRQE4Ci3rpcg09Ug==",
-      "path": "websocket4net/0.14.1",
-      "hashPath": "websocket4net.0.14.1.nupkg.sha512"
-    },
-    "ExternalServices/1.0.0": {
+    "TickerMonitor/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

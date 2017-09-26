@@ -9,7 +9,6 @@ namespace ExternalServices
     {
         public static T Load<T>(string config)
         {
-           
             return JsonConvert.DeserializeObject<T>(config);
         }
     }

@@ -7,7 +7,7 @@ using System.Text;
 
 namespace ExternalServices
 {
-    public class BitstampPublicApi : RestApi
+    public class BitstampPublicApi : RestApi, IPublicApi
     {
         private const string TICKER = "https://www.bitstamp.net/api/v2/ticker/";
         private const string ORDER_BOOK = "https://www.bitstamp.net/api/v2/order_book/";

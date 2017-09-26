@@ -1,0 +1,9 @@
+D:\branches\Bitfinex\PublicServices\bin\Debug\netcoreapp2.0\TickerMonitor.deps.json
+D:\branches\Bitfinex\PublicServices\bin\Debug\netcoreapp2.0\TickerMonitor.dll
+D:\branches\Bitfinex\PublicServices\obj\Debug\netcoreapp2.0\TickerMonitor.csprojResolveAssemblyReference.cache
+D:\branches\Bitfinex\PublicServices\obj\Debug\netcoreapp2.0\TickerMonitor.csproj.CoreCompileInputs.cache
+D:\branches\Bitfinex\PublicServices\obj\Debug\netcoreapp2.0\TickerMonitor.AssemblyInfoInputs.cache
+D:\branches\Bitfinex\PublicServices\obj\Debug\netcoreapp2.0\TickerMonitor.AssemblyInfo.cs
+D:\branches\Bitfinex\PublicServices\bin\Debug\netcoreapp2.0\TickerMonitor.pdb
+D:\branches\Bitfinex\PublicServices\obj\Debug\netcoreapp2.0\TickerMonitor.dll
+D:\branches\Bitfinex\PublicServices\obj\Debug\netcoreapp2.0\TickerMonitor.pdb

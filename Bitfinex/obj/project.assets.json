@@ -7274,7 +7274,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mikel\\.nuget\\packages\\": {},
+    "C:\\Users\\micha\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -7283,17 +7283,17 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "E:\\Projects\\Bitfinex\\Bitfinex\\ExternalServices.csproj",
+      "projectUniqueName": "D:\\branches\\Bitfinex\\Bitfinex\\ExternalServices.csproj",
       "projectName": "ExternalServices",
-      "projectPath": "E:\\Projects\\Bitfinex\\Bitfinex\\ExternalServices.csproj",
-      "packagesPath": "C:\\Users\\mikel\\.nuget\\packages\\",
-      "outputPath": "E:\\Projects\\Bitfinex\\Bitfinex\\obj\\",
+      "projectPath": "D:\\branches\\Bitfinex\\Bitfinex\\ExternalServices.csproj",
+      "packagesPath": "C:\\Users\\micha\\.nuget\\packages\\",
+      "outputPath": "D:\\branches\\Bitfinex\\Bitfinex\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\mikel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\micha\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

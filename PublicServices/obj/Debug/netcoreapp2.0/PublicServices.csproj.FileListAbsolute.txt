@@ -1,0 +1,8 @@
+D:\branches\Bitfinex\PublicServices\bin\Debug\netcoreapp2.0\PublicServices.deps.json
+D:\branches\Bitfinex\PublicServices\bin\Debug\netcoreapp2.0\PublicServices.dll
+D:\branches\Bitfinex\PublicServices\obj\Debug\netcoreapp2.0\PublicServices.csproj.CoreCompileInputs.cache
+D:\branches\Bitfinex\PublicServices\obj\Debug\netcoreapp2.0\PublicServices.AssemblyInfoInputs.cache
+D:\branches\Bitfinex\PublicServices\obj\Debug\netcoreapp2.0\PublicServices.AssemblyInfo.cs
+D:\branches\Bitfinex\PublicServices\bin\Debug\netcoreapp2.0\PublicServices.pdb
+D:\branches\Bitfinex\PublicServices\obj\Debug\netcoreapp2.0\PublicServices.dll
+D:\branches\Bitfinex\PublicServices\obj\Debug\netcoreapp2.0\PublicServices.pdb
