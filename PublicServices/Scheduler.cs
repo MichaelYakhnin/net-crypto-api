@@ -1,9 +1,11 @@
 ﻿using Quartz;
 using Quartz.Impl;
+using Quartz.Impl.Matchers;
 using Quartz.Logging;
 using System;
 using System.Collections.Generic;
 using System.Collections.Specialized;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -37,53 +39,19 @@ namespace TickerMonitor
                 
                 foreach (var jobAsset in _job_list)
                 {
-                    if (jobAsset.Provider.Equals("Bitfinex")){
-                        // define the job and tie it to our HelloJob class
-                        IJobDetail job = JobBuilder.Create<BitfinexJob>()
-                            .WithIdentity(jobAsset.Asset, jobAsset.Provider)
-                            .UsingJobData("url", jobAsset.Url)
-                            .UsingJobData("OrderNumber", jobAsset.OrderNumber)
-                            .Build();
-
-                        // Trigger the job to run now, and then repeat every 3 seconds
-                        ITrigger trigger = TriggerBuilder.Create()
-                            .WithIdentity(jobAsset.Asset, jobAsset.Provider)
-                            .StartNow()
-                            .WithSimpleSchedule(x => x
-                                .WithIntervalInSeconds(jobAsset.TimeJobTimer)
-                                .RepeatForever())
-                            .Build();
-                        //// Tell quartz to schedule the job using our trigger
-                       
-                        await scheduler.ScheduleJob(job, trigger);
-                    }
-                    if (jobAsset.Provider.Equals("Bitstamp"))
+                    if (jobAsset.Provider.Equals("Bitfinex"))
                     {
                         // define the job and tie it to our HelloJob class
-                        IJobDetail job = JobBuilder.Create<BitstampJob>()
-                            .WithIdentity(jobAsset.Asset, jobAsset.Provider)
-                            .UsingJobData("url", jobAsset.Url)
-                            .UsingJobData("OrderNumber", jobAsset.OrderNumber)
-                            .Build();
-
-                        // Trigger the job to run now, and then repeat every 3 seconds
-                        ITrigger trigger = TriggerBuilder.Create()
-                            .WithIdentity(jobAsset.Asset, jobAsset.Provider)
-                            .StartNow()
-                            .WithSimpleSchedule(x => x
-                                .WithIntervalInSeconds(jobAsset.TimeJobTimer)
-                                .RepeatForever())
-                            .Build();
-                        //// Tell quartz to schedule the job using our trigger
-
-                        await scheduler.ScheduleJob(job, trigger);
+                        await CreateJobSchedule(jobAsset, new BitfinexJob().GetType());
                     }
+
+                    if (jobAsset.Provider.Equals("Bitstamp"))
+                    {
+                        await CreateJobSchedule(jobAsset, new BitstampJob().GetType());
+                    }
+
                 }
-
-                
-
-                //RateJobListener rateJobListener = new RateJobListener();
-                //scheduler.ListenerManager.AddJobListener(rateJobListener, KeyMatcher<JobKey>.KeyEquals(new JobKey("job1", "group1")));
+                   
 
             }
             catch (SchedulerException se)
@@ -91,6 +59,30 @@ namespace TickerMonitor
                 Console.WriteLine(se);
             }
         }
+
+        private static async Task CreateJobSchedule(JobConfig jobAsset, Type type)
+        {
+            IJobDetail job = JobBuilder.Create(type)
+                .WithIdentity(jobAsset.Asset, jobAsset.Provider)
+                .UsingJobData("url", jobAsset.Url)
+                .UsingJobData("OrderNumber", jobAsset.OrderNumber)
+                .Build();
+
+            // Trigger the job to run now, and then repeat every 3 seconds
+            ITrigger trigger = TriggerBuilder.Create()
+                .WithIdentity(jobAsset.Asset, jobAsset.Provider)
+                .StartNow()
+                .WithSimpleSchedule(x => x
+                    .WithIntervalInSeconds(jobAsset.TimeJobTimer)
+                    .RepeatForever())
+                .Build();
+            //// Tell quartz to schedule the job using our trigger
+
+            await scheduler.ScheduleJob(job, trigger);
+            scheduler.ListenerManager.AddJobListener(new RateJobListener(), KeyMatcher<JobKey>.KeyEquals(new JobKey(jobAsset.Asset, jobAsset.Provider)));
+        }
+    
+
         public static async Task StopJobs()
         {
             try

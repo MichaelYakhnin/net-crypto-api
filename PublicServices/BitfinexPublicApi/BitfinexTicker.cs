@@ -9,7 +9,6 @@ namespace TickerMonitor
 
     public class BitfinexTicker
     {
-
         [JsonProperty("mid")]
         public string Mid { get; set; }
 

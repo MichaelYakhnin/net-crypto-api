@@ -21,6 +21,7 @@ namespace ConsoleBitfinex
             
             //quartz
             LogProvider.SetCurrentLogProvider(new Scheduler.ConsoleLogProvider());
+
             JobConfig jobConfig1 = new JobConfig
             {
                 Provider = "Bitfinex",
@@ -34,7 +35,7 @@ namespace ConsoleBitfinex
                 Provider = "Bitfinex",
                 Asset = "ETHUSD",
                 OrderNumber = 25,
-                TimeJobTimer = 3,
+                TimeJobTimer = 4,
                 Url = "https://api.bitfinex.com/v1/book/"
             };
             JobConfig jobConfig3 = new JobConfig
@@ -42,13 +43,42 @@ namespace ConsoleBitfinex
                 Provider = "Bitstamp",
                 Asset = "btcusd",
                 OrderNumber = 25,
-                TimeJobTimer = 3,
+                TimeJobTimer = 5,
                 Url = "https://www.bitstamp.net/api/v2/order_book/"
             };
-            List<JobConfig> job_list = new List<JobConfig>();
-            job_list.Add(jobConfig1);
-            job_list.Add(jobConfig2);
-            job_list.Add(jobConfig3);
+            JobConfig jobConfig4 = new JobConfig
+            {
+                Provider = "Bitstamp",
+                Asset = "ltcusd",
+                OrderNumber = 25,
+                TimeJobTimer = 6,
+                Url = "https://www.bitstamp.net/api/v2/order_book/"
+            };
+            JobConfig jobConfig5 = new JobConfig
+            {
+                Provider = "Bitstamp",
+                Asset = "ethusd",
+                OrderNumber = 25,
+                TimeJobTimer = 2,
+                Url = "https://www.bitstamp.net/api/v2/order_book/"
+            };
+            JobConfig jobConfig6 = new JobConfig
+            {
+                Provider = "Bitstamp",
+                Asset = "ethusd",
+                OrderNumber = 25,
+                TimeJobTimer = 1,
+                Url = "https://www.bitstamp.net/api/v2/order_book/"
+            };
+            List<JobConfig> job_list = new List<JobConfig>
+            {
+                jobConfig1,
+                jobConfig2,
+                jobConfig3,
+                jobConfig4,
+                jobConfig5,
+                jobConfig6
+            };
             Scheduler.LoadJobsFromDB(job_list);
             Scheduler.RunJobs().GetAwaiter().GetResult();
             

@@ -8,20 +8,20 @@ namespace TickerMonitor
 {
     public class BitfinexJob : IJob
     {
-        
-        private BitfinexPublicApi bitfinexPublicApi;
+
+        public IPublicApi publicApi;
         
         public BitfinexJob()
         {
-            bitfinexPublicApi = new BitfinexPublicApi(); ;
+            publicApi = new BitfinexPublicApi(); ;
         }
 
         public Task Execute(IJobExecutionContext context)
         {
             JobDataMap dataMap = context.JobDetail.JobDataMap;
-            bitfinexPublicApi.url = dataMap.GetString("url");
-            bitfinexPublicApi.Order_num = dataMap.GetInt("OrderNumber");
-            GetOrderBookByTicker(bitfinexPublicApi, context.JobDetail.Key.Name);
+            publicApi.url = dataMap.GetString("url");
+            publicApi.Order_num = dataMap.GetInt("OrderNumber");
+            GetOrderBookByTicker(publicApi, context.JobDetail.Key.Name);
             return Task.CompletedTask;
         }
 
@@ -29,8 +29,8 @@ namespace TickerMonitor
         {
             publicApi.GetOrderBook(ticker);
             publicApi.GetNdataFromOrderBook();
-            Console.WriteLine("Provider:" + publicApi.lastDataOrderBook.Provider + " " + publicApi.lastDataOrderBook.AssetName + " Bid:" + publicApi.lastDataOrderBook.bids.price + " Amount:" + publicApi.lastDataOrderBook.bids.amount + " Timestamp:" + Utils.UnixTimeStampToDateTime(double.Parse(publicApi.lastDataOrderBook.bids.timestamp)));
-            Console.WriteLine("Provider:" + publicApi.lastDataOrderBook.Provider + " " + publicApi.lastDataOrderBook.AssetName + " Ask:" + publicApi.lastDataOrderBook.asks.price + " Amount:" + publicApi.lastDataOrderBook.asks.amount + " Timestamp:" + Utils.UnixTimeStampToDateTime(double.Parse(publicApi.lastDataOrderBook.bids.timestamp)));
+            //Console.WriteLine("Provider:" + publicApi.lastDataOrderBook.Provider + " " + publicApi.lastDataOrderBook.AssetName + " Bid:" + publicApi.lastDataOrderBook.bids.price + " Amount:" + publicApi.lastDataOrderBook.bids.amount + " Timestamp:" + Utils.UnixTimeStampToDateTime(double.Parse(publicApi.lastDataOrderBook.bids.timestamp)));
+            //Console.WriteLine("Provider:" + publicApi.lastDataOrderBook.Provider + " " + publicApi.lastDataOrderBook.AssetName + " Ask:" + publicApi.lastDataOrderBook.asks.price + " Amount:" + publicApi.lastDataOrderBook.asks.amount + " Timestamp:" + Utils.UnixTimeStampToDateTime(double.Parse(publicApi.lastDataOrderBook.bids.timestamp)));
         }
 
     }

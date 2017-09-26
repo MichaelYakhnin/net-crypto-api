@@ -34,15 +34,20 @@ namespace TickerMonitor
         }
         public void GetNdataFromOrderBook()
         {
-            lastDataOrderBook = new LastDataOrderBook();
-            lastDataOrderBook.Provider = "Bitstamp";
-            lastDataOrderBook.AssetName = assetOrder;
-            lastDataOrderBook.asks.price = orderBookBitstamp.asks[Order_num - 1][0];
-            lastDataOrderBook.asks.amount = orderBookBitstamp.asks[Order_num - 1][1];
-            lastDataOrderBook.asks.timestamp = orderBookBitstamp.timestamp;
-            lastDataOrderBook.bids.price = orderBookBitstamp.bids[Order_num - 1][0];
-            lastDataOrderBook.bids.amount = orderBookBitstamp.bids[Order_num - 1][1];
-            lastDataOrderBook.bids.timestamp = orderBookBitstamp.timestamp;
+            if (orderBookBitstamp != null)
+            {
+                lastDataOrderBook = new LastDataOrderBook
+                {
+                    Provider = "Bitstamp",
+                    AssetName = assetOrder
+                };
+                lastDataOrderBook.asks.price = orderBookBitstamp.asks[Order_num - 1][0];
+                lastDataOrderBook.asks.amount = orderBookBitstamp.asks[Order_num - 1][1];
+                lastDataOrderBook.asks.timestamp = orderBookBitstamp.timestamp;
+                lastDataOrderBook.bids.price = orderBookBitstamp.bids[Order_num - 1][0];
+                lastDataOrderBook.bids.amount = orderBookBitstamp.bids[Order_num - 1][1];
+                lastDataOrderBook.bids.timestamp = orderBookBitstamp.timestamp;
+            }
 
             
         }
