@@ -7058,7 +7058,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\micha\\.nuget\\packages\\": {},
+    "C:\\Users\\mikel\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -7067,17 +7067,17 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "D:\\branches\\Bitfinex\\ConsoleBitfinex\\ConsoleBitfinex.csproj",
+      "projectUniqueName": "E:\\Projects\\Bitfinex\\ConsoleBitfinex\\ConsoleBitfinex.csproj",
       "projectName": "ConsoleBitfinex",
-      "projectPath": "D:\\branches\\Bitfinex\\ConsoleBitfinex\\ConsoleBitfinex.csproj",
-      "packagesPath": "C:\\Users\\micha\\.nuget\\packages\\",
-      "outputPath": "D:\\branches\\Bitfinex\\ConsoleBitfinex\\obj\\",
+      "projectPath": "E:\\Projects\\Bitfinex\\ConsoleBitfinex\\ConsoleBitfinex.csproj",
+      "packagesPath": "C:\\Users\\mikel\\.nuget\\packages\\",
+      "outputPath": "E:\\Projects\\Bitfinex\\ConsoleBitfinex\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\micha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mikel\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7090,8 +7090,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "D:\\branches\\Bitfinex\\PublicServices\\TickerMonitor.csproj": {
-              "projectPath": "D:\\branches\\Bitfinex\\PublicServices\\TickerMonitor.csproj"
+            "E:\\Projects\\Bitfinex\\PublicServices\\TickerMonitor.csproj": {
+              "projectPath": "E:\\Projects\\Bitfinex\\PublicServices\\TickerMonitor.csproj"
             }
           }
         }

@@ -7,3 +7,12 @@ D:\branches\Bitfinex\PublicServices\obj\Debug\netcoreapp2.0\TickerMonitor.Assemb
 D:\branches\Bitfinex\PublicServices\bin\Debug\netcoreapp2.0\TickerMonitor.pdb
 D:\branches\Bitfinex\PublicServices\obj\Debug\netcoreapp2.0\TickerMonitor.dll
 D:\branches\Bitfinex\PublicServices\obj\Debug\netcoreapp2.0\TickerMonitor.pdb
+E:\Projects\Bitfinex\PublicServices\bin\Debug\netcoreapp2.0\TickerMonitor.deps.json
+E:\Projects\Bitfinex\PublicServices\bin\Debug\netcoreapp2.0\TickerMonitor.dll
+E:\Projects\Bitfinex\PublicServices\bin\Debug\netcoreapp2.0\TickerMonitor.pdb
+E:\Projects\Bitfinex\PublicServices\obj\Debug\netcoreapp2.0\TickerMonitor.csprojResolveAssemblyReference.cache
+E:\Projects\Bitfinex\PublicServices\obj\Debug\netcoreapp2.0\TickerMonitor.csproj.CoreCompileInputs.cache
+E:\Projects\Bitfinex\PublicServices\obj\Debug\netcoreapp2.0\TickerMonitor.AssemblyInfoInputs.cache
+E:\Projects\Bitfinex\PublicServices\obj\Debug\netcoreapp2.0\TickerMonitor.AssemblyInfo.cs
+E:\Projects\Bitfinex\PublicServices\obj\Debug\netcoreapp2.0\TickerMonitor.dll
+E:\Projects\Bitfinex\PublicServices\obj\Debug\netcoreapp2.0\TickerMonitor.pdb

@@ -14,8 +14,6 @@ E:\Projects\Bitfinex\ConsoleBitfinex\bin\Debug\netcoreapp2.0\ConsoleBitfinex.run
 E:\Projects\Bitfinex\ConsoleBitfinex\bin\Debug\netcoreapp2.0\ConsoleBitfinex.runtimeconfig.dev.json
 E:\Projects\Bitfinex\ConsoleBitfinex\bin\Debug\netcoreapp2.0\ConsoleBitfinex.dll
 E:\Projects\Bitfinex\ConsoleBitfinex\bin\Debug\netcoreapp2.0\ConsoleBitfinex.pdb
-E:\Projects\Bitfinex\ConsoleBitfinex\bin\Debug\netcoreapp2.0\ExternalServices.dll
-E:\Projects\Bitfinex\ConsoleBitfinex\bin\Debug\netcoreapp2.0\ExternalServices.pdb
 E:\Projects\Bitfinex\ConsoleBitfinex\obj\Debug\netcoreapp2.0\ConsoleBitfinex.csprojResolveAssemblyReference.cache
 E:\Projects\Bitfinex\ConsoleBitfinex\obj\Debug\netcoreapp2.0\ConsoleBitfinex.csproj.CoreCompileInputs.cache
 E:\Projects\Bitfinex\ConsoleBitfinex\obj\Debug\netcoreapp2.0\ConsoleBitfinex.AssemblyInfoInputs.cache
@@ -24,3 +22,5 @@ E:\Projects\Bitfinex\ConsoleBitfinex\obj\Debug\netcoreapp2.0\ConsoleBitfinex.dll
 E:\Projects\Bitfinex\ConsoleBitfinex\obj\Debug\netcoreapp2.0\ConsoleBitfinex.pdb
 D:\branches\Bitfinex\ConsoleBitfinex\bin\Debug\netcoreapp2.0\TickerMonitor.dll
 D:\branches\Bitfinex\ConsoleBitfinex\bin\Debug\netcoreapp2.0\TickerMonitor.pdb
+E:\Projects\Bitfinex\ConsoleBitfinex\bin\Debug\netcoreapp2.0\TickerMonitor.dll
+E:\Projects\Bitfinex\ConsoleBitfinex\bin\Debug\netcoreapp2.0\TickerMonitor.pdb

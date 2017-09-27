@@ -6946,7 +6946,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\micha\\.nuget\\packages\\": {},
+    "C:\\Users\\mikel\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -6955,17 +6955,17 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "D:\\branches\\Bitfinex\\PublicServices\\TickerMonitor.csproj",
+      "projectUniqueName": "E:\\Projects\\Bitfinex\\PublicServices\\TickerMonitor.csproj",
       "projectName": "TickerMonitor",
-      "projectPath": "D:\\branches\\Bitfinex\\PublicServices\\TickerMonitor.csproj",
-      "packagesPath": "C:\\Users\\micha\\.nuget\\packages\\",
-      "outputPath": "D:\\branches\\Bitfinex\\PublicServices\\obj\\",
+      "projectPath": "E:\\Projects\\Bitfinex\\PublicServices\\TickerMonitor.csproj",
+      "packagesPath": "C:\\Users\\mikel\\.nuget\\packages\\",
+      "outputPath": "E:\\Projects\\Bitfinex\\PublicServices\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\micha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mikel\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

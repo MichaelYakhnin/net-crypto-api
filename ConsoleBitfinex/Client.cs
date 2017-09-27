@@ -7,12 +7,13 @@ using System;
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Threading.Tasks;
+using System.Collections.Concurrent;
 
 namespace ConsoleBitfinex
 {
     class Program
     {
-        
+        static ConcurrentQueue<LastDataOrderBook> concurrentQueue;
 
         static void Main(string[] args)
         {
@@ -72,21 +73,39 @@ namespace ConsoleBitfinex
             };
             List<JobConfig> job_list = new List<JobConfig>
             {
-                jobConfig1,
-                jobConfig2,
-                jobConfig3,
+                //jobConfig1,
+                //jobConfig2,
+                //jobConfig3,
                 jobConfig4,
                 jobConfig5,
-                jobConfig6
+                //jobConfig6
             };
+
             Scheduler.LoadJobsFromDB(job_list);
             Scheduler.RunJobs().GetAwaiter().GetResult();
+            RateJobListener.orderbookhandler += Show_Message;
+
+            concurrentQueue = new ConcurrentQueue<LastDataOrderBook>();
+           
+            if (!concurrentQueue.IsEmpty)
+            {
+                LastDataOrderBook lastDataOrderBook;
+                while (concurrentQueue.TryDequeue(out lastDataOrderBook))
+                {
+                    Console.WriteLine("Provider:" + lastDataOrderBook.Provider + " " + lastDataOrderBook.AssetName + " Bid:" + lastDataOrderBook.bids.price + " Amount:" + lastDataOrderBook.bids.amount + " Timestamp:" + Utils.UnixTimeStampToDateTime(double.Parse(lastDataOrderBook.bids.timestamp)));
+                }
+            }
+            bool isEmpty = concurrentQueue.IsEmpty;
             
             Console.WriteLine("Press any key to exit...");
             Console.ReadLine();
         }
+        private static void Show_Message(LastDataOrderBook lastDataOrderBook)
+        {
+            concurrentQueue.Enqueue(lastDataOrderBook);
+            Console.WriteLine("Added");
+        }
 
-        
 
         //private BitstampClient BitstampClient { get; set; }
 

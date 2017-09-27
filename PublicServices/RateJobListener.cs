@@ -12,6 +12,10 @@ namespace TickerMonitor
         private int counter = 1;
         public string Name => "RateJobListener" + Interlocked.Increment(ref counter).ToString();
 
+        public delegate void OrderBookHandler(LastDataOrderBook lastDataOrderBook);
+        
+        public static event OrderBookHandler orderbookhandler;
+
         public Task JobExecutionVetoed(IJobExecutionContext context, CancellationToken cancellationToken = default(CancellationToken))
         {
            // Console.WriteLine("JobExecutionVetoed");
@@ -34,6 +38,7 @@ namespace TickerMonitor
                     Console.WriteLine("Provider:" + resultObject.publicApi.lastDataOrderBook.Provider + " " + resultObject.publicApi.lastDataOrderBook.AssetName + " Bid:" + resultObject.publicApi.lastDataOrderBook.bids.price + " Amount:" + resultObject.publicApi.lastDataOrderBook.bids.amount + " Timestamp:" + Utils.UnixTimeStampToDateTime(double.Parse(resultObject.publicApi.lastDataOrderBook.bids.timestamp)));
                     Console.WriteLine("Provider:" + resultObject.publicApi.lastDataOrderBook.Provider + " " + resultObject.publicApi.lastDataOrderBook.AssetName + " Ask:" + resultObject.publicApi.lastDataOrderBook.asks.price + " Amount:" + resultObject.publicApi.lastDataOrderBook.asks.amount + " Timestamp:" + Utils.UnixTimeStampToDateTime(double.Parse(resultObject.publicApi.lastDataOrderBook.bids.timestamp)));
                     Console.WriteLine("JobWasExecuted");
+                    orderbookhandler?.Invoke(resultObject.publicApi.lastDataOrderBook);
                 }
             }
             catch(Exception ex)
